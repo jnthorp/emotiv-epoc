@@ -54,6 +54,3 @@ General Rules
 The Emotiv headset has a command called 'IEE_EngineDisconnect' that has to be called after the recording session is over, or the rest of the data that comes in will be corrupted. This means that if the task quits or errors before getting to the end, the easiest thing to do is quit Matlab and open it again.
 
 Your task should have an emotiv_setup script, which will create all the necessary variables, an emotiv_collect function that has each necessary variable as an input, and an emotiv_save function that will finalize the task and disconnect from the engine.
-
-Words of advice: 
-Anywhere the Emotiv scripts write out a path thatÕs relative to where your Matlab path is set to (ie '../../tools/ etc.'), just replace it with the full path. It doesn't give you an informative error if it just can't find what it's looking for.
